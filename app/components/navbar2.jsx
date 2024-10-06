@@ -9,7 +9,7 @@ function Navbar2() {
       {" "}
       <div
         style={{ borderBottom: "3px" }}
-        class="flex  justify-between items-center p-4"
+        className="flex  justify-between items-center p-4"
       >
         <FaBars color="#0FA7E6" size={30} />
         <div className="flex flex-wrap gap-2">

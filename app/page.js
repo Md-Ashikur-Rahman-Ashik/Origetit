@@ -5,6 +5,8 @@ import Navbar from "./components/navbar";
 import Navbar2 from "./components/navbar2";
 import SentimentChart from "./components/SentimentChart";
 import TrustworthyNewsChart from "./components/NewsChart";
+import BarChartComponent from "./components/BarChart";
+import MapComponent from "./components/MapComponent";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("This week");
@@ -40,11 +42,10 @@ export default function Home() {
             {["This week", "This month", "Choose date"].map((tab) => (
               <button
                 key={tab}
-                className={`px-4 py-2 rounded-md ${
-                  activeTab === tab
-                    ? "bg-[#0FA7E66E] font-bold"
-                    : "bg-gray-100 text-black font-semibold"
-                }`}
+                className={`px-4 py-2 rounded-md ${activeTab === tab
+                  ? "bg-[#0FA7E66E] font-bold"
+                  : "bg-gray-100 text-black font-semibold"
+                  }`}
                 onClick={() => handleTabClick(tab)}
               >
                 {tab}
@@ -73,6 +74,14 @@ export default function Home() {
             )}
             {/* Add conditions for other tabs */}
           </div>
+        </div>
+      </div>
+      <div className="flex flex-col lg:flex-row gap-4 p-4">
+        <div className="lg:w-1/2 w-full">
+          <BarChartComponent />
+        </div>
+        <div className="lg:w-1/2 w-full">
+          {/* <MapComponent /> */}
         </div>
       </div>
     </div>

@@ -1,0 +1,42 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "China"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [102.0, 38.0],
+              [103.0, 38.0],
+              [103.0, 39.0],
+              [102.0, 39.0],
+              [102.0, 38.0]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "India"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [78.0, 35.0],
+              [79.0, 35.0],
+              [79.0, 34.0],
+              [78.0, 34.0],
+              [78.0, 35.0]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+  

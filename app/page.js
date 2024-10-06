@@ -81,7 +81,7 @@ export default function Home() {
           <BarChartComponent />
         </div>
         <div className="lg:w-1/2 w-full">
-          {/* <MapComponent /> */}
+          <MapComponent />
         </div>
       </div>
     </div>

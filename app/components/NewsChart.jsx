@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import DatePicker from "react-datepicker"; // Import date picker
+import "react-datepicker/dist/react-datepicker.css"; // Import styles for the date picker
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -28,7 +28,7 @@ const TrustworthyNewsChart = () => {
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("This week");
   const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(new Date()); // State for end date
 
   const getPastWeek = () => {
     const currentDate = new Date();
@@ -163,6 +163,7 @@ const TrustworthyNewsChart = () => {
         ))}
       </div>
 
+      {/* Date Range Picker for "Choose date" tab */}
       {activeTab === "Choose date" && (
         <div className="mt-4">
           <label className="mr-2">Start Date:</label>

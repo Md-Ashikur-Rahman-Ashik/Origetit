@@ -59,7 +59,9 @@ export default function Home() {
         <div className="lg:w-1/2 w-full">
           <BarChartComponent />
         </div>
-        <div className="lg:w-1/2 w-full">{/* <MapComponent /> */}</div>
+        <div className="lg:w-1/2 w-full">
+          <MapComponent />
+        </div>
       </div>
     </div>
   );

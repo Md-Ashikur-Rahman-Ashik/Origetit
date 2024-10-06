@@ -4,7 +4,7 @@ import Image from "next/image";
 import Navbar from "./components/navbar";
 import Navbar2 from "./components/navbar2";
 import SentimentChart from "./components/SentimentChart";
-import TrustworthyNewsChart from "./components/TrustworthyNewsChart";
+import TrustworthyNewsChart from "./components/NewsChart";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("This week");
@@ -35,15 +35,15 @@ export default function Home() {
       {/* New Chart Section */}
       <div className="p-5">
         <div className="flex justify-between items-center mb-5">
-          <h1 className="text-2xl font-bold">Falcon AI Dashboard</h1>
+          <h1 className="text-2xl text-[#0FA7E6] font-bold">Falcon AI Dashboard</h1>
           <div className="space-x-3">
             {["This week", "This month", "Choose date"].map((tab) => (
               <button
                 key={tab}
                 className={`px-4 py-2 rounded-md ${
                   activeTab === tab
-                    ? "bg-blue-500 text-white"
-                    : "bg-gray-100 text-black"
+                    ? "bg-[#0FA7E66E] font-bold"
+                    : "bg-gray-100 text-black font-semibold"
                 }`}
                 onClick={() => handleTabClick(tab)}
               >

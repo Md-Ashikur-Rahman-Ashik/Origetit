@@ -35,6 +35,24 @@ const SentimentChart = ({ data }) => {
                 position: 'bottom',
             },
         },
+        scales: {
+            y: {
+                title: {
+                    display: true,
+                    text: "Volume",  // This adds the "Volume" label on the y-axis
+                    font: {
+                        size: 14, // Adjust the font size as per your needs
+                        weight: "bold"
+                    },
+                    align: 'center', // Aligns the label in the center of the axis
+                    color: '#000' // Color for the label text
+                },
+                beginAtZero: true,
+            },
+            x: {
+                beginAtZero: true,
+            },
+        },
     };
 
     return <Line data={chartData} options={options} />;
